@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Picture</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/a11y-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <link rel="stylesheet" href="./css/picture.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Picture</h1>
+      <h2>&lt;source</h2>
+      <h3>sizes - список размеров изображений для разных размеров страниц</h3>
+      <div class="img-box"><img src="./img/size-classes.svg" alt="" /></div>
+      <p>
+        Задаем список через запятую размеров экранов, для которых надо подбирать
+        изображения из <b>srcset</b>
+      </p>
+      <pre><code class="html">
+&lt;picture&gt;
+  &lt;source
+    sizes="(min-width: 960px) calc(33.3vw - 10px),
+      (min-width: 510px) calc(50vw - 15px),
+      calc(100vw - 10px)" 
+  &gt;
+        </code></pre>
+      <div class="clearfix">
+        <img class="fl" src="./img/sic_logo.png" width="300" alt="" />
+        <h3>srcset - делаем список через запятую с указанием :</h3>
+        <ul>
+          <li>пути к изображению</li>
+          <li>описанием ширины изображения в виде <b>w400</b></li>
+          <li>или описанием плотности пикселей <b>x2</b></li>
+        </ul>
+
+        <div class="img-box"></div>
+        <h3>
+          Важно! Нельзя совмещать в одном srcset дискриптеры <b>w</b> и
+          <b>x</b>.
+        </h3>
+        <pre><code class="html">
+&lt;picture&gt;
+  &lt;source
+    srcset="
+      image-size-240x240.jpg 240w,
+      image-size-320x320.jpg 320w,
+      image-size-480x480.jpg 480w,
+      image-size-640x640.jpg 640w,
+      image-size-960x960.jpg 960w
+    "
+  &gt;
+        </code></pre>
+        <p>Браузер сам выберет подходящее изображение из заданного набора.</p>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/css.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+}
+
+.wrapper   {
+    min-width: 320px;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, .2);
+    padding: 1rem;
+}
+
+header {
+    padding: 10vmin 1rem;
+    background-color: hsl(220, 13%, 18%);
+    line-height: 1.8;
+}
+
+header h1 {
+    font-size: calc(1rem + 2vmin);
+    text-align: center;
+    color: #fff;
+}
+header p {
+    /* font-size: calc(.625rem + 1vmin); */
+    font-size: calc(.8rem + 1vmin);
+    text-align: center;
+    color: #fff;
+}
+
+.red {
+    color: #b00;
+}

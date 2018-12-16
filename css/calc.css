@@ -1,0 +1,38 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.wrapper {
+  max-width: 960px;
+  min-width: 360px;
+  margin: auto;
+}
+
+.img-box {
+    padding-top: 1rem;
+    width: 90%;
+    margin: auto;
+    box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, .2);
+}
+
+img {
+    width: 100%;
+}
+@media (min-width: 480px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.layouts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.layouts-img {
+  box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, .2);
+  min-height: 200px;
+  margin: 1rem;
+}

@@ -1,0 +1,35 @@
+.container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1440px;
+  margin: auto;
+  line-height: 1;
+}
+
+.box {
+  margin: 5px;
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+img {
+  width: 100%;
+  touch-action: manipulation;
+}
+
+@media (min-width: 510px) {
+  .container-fluid {
+    padding: 5px;
+  }
+  .box {
+    width: calc(50% - 15px);
+  }
+}
+
+@media (min-width: 960px) {
+  .box {
+    width: calc(33.33% - 10px);
+  }
+}

@@ -1,0 +1,60 @@
+body {
+  font-family: sans-serif;
+  color: #345;
+}
+
+h1 {
+  text-align: center;
+}
+
+.wrapper {
+  padding: 1vmin;
+}
+
+@media (min-width: 510px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+    box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, 0.2);
+  }
+}
+
+code {
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, 0.2);
+  font-size: calc(10px + 1vmin);
+}
+
+p, li {
+  font-size: calc(10px + 1vmin);
+  text-indent: 2rem;
+}
+
+.img-box img {
+  height: 256px;
+}
+
+h2 {
+    text-indent: 1.5rem;
+}
+h3 {
+    text-indent: 3rem;
+}
+.fl {
+    float: left;
+    margin-right: 1rem;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+ul {
+    list-style: none;
+}
+
+li::before {
+    content: "- "; 
+}
